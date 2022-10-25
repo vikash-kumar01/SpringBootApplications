@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class TestController {
 
-     @RequestMapping("/test")
-     @ResponseBody
+     @RequestMapping("/test")     // URL/test
+     @ResponseBody                // Print String as it is on WebPage
 	 public String handleTest(){
 		 
 		return "My First Project using STS" ; 
