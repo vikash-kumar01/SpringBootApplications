@@ -73,6 +73,35 @@ public class SpringBootJpaExampleApplication {
 //        
 //        allUsers.forEach(user->System.out.println(user));
 //        userRepository.deleteAll(allUsers);
+    
+    
+    //Custom finder method
+    
+//    List<User> allUsers = userRepository.findByName("vikash");
+//    
+//    allUsers.forEach(e -> System.out.println(e));
+//    
+//    System.out.println("--------------------------------------------------");
+//    List<User> users = userRepository.findByNameAndCity("vikash", "patna");
+//    
+//    users.forEach(e->System.out.println(e));
+    
+    
+    // Executing JPQL and Native Queries
+    
+//    List<User> allusers = userRepository.getAllUser();
+//    
+//    allusers.forEach(e->System.out.println(e));
+    
+    
+//    List<User> users = userRepository.findByName("vikash");
+//    users.forEach(e->System.out.println(e));
+    
+//    List<User> allusers = userRepository.findByNameAndCity("Amar", "Darbhanga");
+//    allusers.forEach(e->System.out.println(e));   
+
+		  userRepository.getAllUser().forEach(e->System.out.println(e));  
+    
         
 	}
 }
